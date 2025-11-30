@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="20dp"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".DailyReportActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvReportTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Health Report"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetching data..."
+            android:textSize="15sp"
+            android:textColor="#616161"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Intake Status"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Intake Progress"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartWater"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure (mmHg)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chartBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glucose Levels (mg/dL)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartGlucose"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight Progress (kg)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartWeight"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 View Vitals History"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

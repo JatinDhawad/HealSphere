@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctors &amp; Pharmacies"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etDocName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doctor Name" />
+
+        <EditText
+            android:id="@+id/etSpeciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Speciality (optional)" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone (with country code)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WhatsApp number (optional)"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email (optional)"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPharmacyUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pharmacy/order URL (optional)"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/btnAddAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Next Appointment (optional)" />
+
+        <Button
+            android:id="@+id/btnSaveDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Doctor"
+            android:layout_marginTop="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutDoctorsList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

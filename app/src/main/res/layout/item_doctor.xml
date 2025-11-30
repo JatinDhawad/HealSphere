@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvDocName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr X"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvDocSpec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speciality"/>
+
+    <TextView
+        android:id="@+id/tvDocPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnCallDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnWhatsAppDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/btnRefill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refill"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddToCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add appointment to Calendar"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>

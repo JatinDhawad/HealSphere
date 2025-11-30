@@ -1,0 +1,49 @@
+# Android specific
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Generated files
+/bin/
+/gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# Signing files (very important)
+*.jks
+*.keystore
+*.pem
+
+# Firebase config (never upload!)
+app/google-services.json
+
+# Android Studio
+.idea/
+*.iml
+/.vscode/
+
+# Logs
+*.log
+
+# Crashlytics / Firebase files
+app/src/*/res/crashlytics-build.properties
+fabric.properties
+
+# Ignore keystore and sensitive credentials
+keystore.properties
+
+# Prevent uploading large APK / AAB files
+*.apk
+*.aab
+
+# Ignore local environment settings
+.env
