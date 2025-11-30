@@ -73,13 +73,21 @@ Log and visualize:
 ## 🔧 Firebase Structure
 
 users
+
 └── {userId}
+
 ├── name, age, contact, photoUrl, emergencyContact
+
 ├── medicines
+
 │ └── {medicineId} → name, dosage, time, note, prescriptionUrl
+
 ├── logs
+
 │ └── YYYY-MM-DD / entries / taken/missed
+
 └── vitals
+
 └── YYYY-MM-DD → systolic, diastolic, glucose, weight
 
 ---
