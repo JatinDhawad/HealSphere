@@ -95,17 +95,29 @@ users
 ## 📂 Project Structure
 
 HealSphere/
+
 └── app/
+
 ├── activities/
+
 │ ├── MainActivity.java
+
 │ ├── ProfileSelectionActivity.java
+
 │ ├── DailyReportActivity.java
+
 │ ├── ViewMedicinesActivity.java
+
 ├── receivers/
+
 │ ├── ReminderReceiver.java
+
 │ ├── HealthTipReceiver.java
+
 ├── xml layouts/
+
 ├── drawable/
+
 ├── manifest/
 
 ---
